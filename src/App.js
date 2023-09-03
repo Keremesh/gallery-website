@@ -1,26 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Gallery from './Gallery';
 
 function App() {
+  const imagePaths = [
+    '/images/zarahome1.jpg',
+    '/images/zarahome2.jpg',
+    '/images/zarahome3.jpg',  
+    '/images/zarahome4.jpg',
+  ];
+
   return (
-    <div className="App">
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">    
+    <h1>My Art Gallery</h1>
+      <Gallery images={imagePaths}/>
     </div>
   );
 }
